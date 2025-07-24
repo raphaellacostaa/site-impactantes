@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fffafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  flex-direction: column; /* empilha verticalmente */
+  align-items: center;
+  padding: 20px 0;
+  background-color: #c2185b; /* rosa escuro feminino */
+  color: white;
+}
+
+/* Logo quadrada e grande */
+.logo {
+  height: 150px; /* aumenta a logo */
+  width: 150px;  /* força quadrado */
+  object-fit: contain; /* evita deformação */
+  margin-bottom: 15px; /* espaço abaixo da logo */
+  border-radius: 12px; /* cantos levemente arredondados */
+  background: white; /* para destacar se quiser */
+  padding: 10px;
+}
+
+/* Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 5px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.1rem;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #ffd1dc; /* rosa claro */
+  color: #c2185b; /* rosa escuro */
+}
+
+/* Banner */
+#banner {
+  background-color: #f5f0e6; /* bege claro */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#banner h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;   /* tamanho equilibrado */
+  color: #4a4a4a;      /* cinza escuro */
+  letter-spacing: 0.5px;
+  line-height: 1.4;
+  max-width: 600px;
+  margin: 0 auto;
+  text-shadow: none;
+}
+
+/* Catálogo */
+#catalogo {
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#catalogo h2 {
+  background-color: #c2185b;
+  color: white;
+  display: inline-block;
+  padding: 4px 12px;       /* menos padding para retângulo menor */
+  border-radius: 4px;      /* menos arredondado */
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;       /* tamanho menor da fonte */
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(194, 24, 91, 0.35);
+}
+
+
+.produtos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+.produtos img {
+  width: 220px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(194, 24, 91, 0.3);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.produtos img:hover {
+  transform: scale(1.05);
+}
+
+/* Sobre */
+#sobre {
+  background-color: #fce4ec;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+#sobre h2 {
+  font-size: 2rem;
+  color: #ad1457;
+  margin-bottom: 20px;
+}
+
+#sobre p {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+}
+
+/* Contato */
+#contato {
+  background-color: #fff;
+  padding: 60px 30px;
+  text-align: center;
+}
+
+#contato h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #c2185b;
+}
+
+#contato a {
+  color: #c2185b;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contato a:hover {
+  text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+  background-color: #f8e1e7;
+  color: #c2185b;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+/* Lightbox CSS */
+
+#lightbox-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  cursor: pointer;
+}
+
+#lightbox-overlay img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.5);
+  transition: transform 0.3s ease;
+}
+
+/* Responsividade básica */
+@media (max-width: 600px) {
+  .logo {
+    height: 120px;
+    width: 120px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #banner h1 {
+    font-size: 1.1rem;
+    max-width: 90vw;
+  }
+
+  .produtos img {
+    width: 90vw;
+    height: auto;
+  }
+}
+
+
+
