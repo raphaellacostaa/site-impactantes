@@ -17,21 +17,21 @@ body {
 /* Cabeçalho */
 header {
   display: flex;
-  flex-direction: column; /* empilha verticalmente */
+  flex-direction: column;
   align-items: center;
   padding: 20px 0;
-  background-color: #c2185b; /* rosa escuro feminino */
+  background-color: #c2185b;
   color: white;
 }
 
 /* Logo quadrada e grande */
 .logo {
-  height: 150px; /* aumenta a logo */
-  width: 150px;  /* força quadrado */
-  object-fit: contain; /* evita deformação */
-  margin-bottom: 15px; /* espaço abaixo da logo */
-  border-radius: 12px; /* cantos levemente arredondados */
-  background: white; /* para destacar se quiser */
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  background: white;
   padding: 10px;
 }
 
@@ -57,13 +57,13 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #ffd1dc; /* rosa claro */
-  color: #c2185b; /* rosa escuro */
+  background-color: #ffd1dc;
+  color: #c2185b;
 }
 
 /* Banner */
 #banner {
-  background-color: #f5f0e6; /* bege claro */
+  background-color: #f5f0e6;
   padding: 40px 20px;
   text-align: center;
 }
@@ -71,8 +71,8 @@ nav a:hover {
 #banner h1 {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-weight: 600;
-  font-size: 1.25rem;   /* tamanho equilibrado */
-  color: #4a4a4a;      /* cinza escuro */
+  font-size: 1.25rem;
+  color: #4a4a4a;
   letter-spacing: 0.5px;
   line-height: 1.4;
   max-width: 600px;
@@ -92,15 +92,14 @@ nav a:hover {
   background-color: #c2185b;
   color: white;
   display: inline-block;
-  padding: 4px 12px;       /* menos padding para retângulo menor */
-  border-radius: 4px;      /* menos arredondado */
+  padding: 4px 12px;
+  border-radius: 4px;
   font-weight: 600;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 1.2rem;       /* tamanho menor da fonte */
+  font-size: 1.2rem;
   margin-bottom: 15px;
   box-shadow: 0 2px 4px rgba(194, 24, 91, 0.35);
 }
-
 
 .produtos {
   display: flex;
@@ -175,7 +174,6 @@ footer {
 }
 
 /* Lightbox CSS */
-
 #lightbox-overlay {
   position: fixed;
   top: 0;
@@ -220,6 +218,11 @@ footer {
     height: auto;
   }
 }
+
+
+
+
+
 
 
 
