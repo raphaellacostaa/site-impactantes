@@ -1,74 +1,389 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Impactantes Moda Feminina</title>
-  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- Font Awesome (ícones reais) -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <img src="images/logo.png" alt="Logo Impactantes" class="logo" />
-    <nav>
-      <ul>
-        <li><a href="#catalogo">Catálogo</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
+
+  <!-- Cabeçalho -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a href="#logo" class="brand" id="logo">
+        <img src="images/logo.png" alt="Impactantes Moda Feminina" class="brand-logo">
+      </a>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="#catalogo">Catálogo</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="banner">
-    <h1>Moda feminina para impactar em qualquer lugar.</h1>
-  </section>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-tag">Moda jovem • Casual • Plus size</span>
+      <h1 class="hero-title">Impactantes Moda Feminina</h1>
+      <p class="hero-subtitle">
+        Moda feminina para impactar em qualquer lugar.
+      </p>
 
-  <section id="catalogo">
-    <h2>Novidades da Coleção</h2>
-    <div class="produtos">
-      <img src="images/produto1.jpg" alt="Look 1" />
-      <img src="images/produto2.jpg" alt="Look 2" />
-      <img src="images/produto3.jpg" alt="Look 3" />
-      <img src="images/produto4.jpg" alt="Look 4" />
-      <img src="images/produto5.jpg" alt="Look 5" />
-      <img src="images/produto6.jpg" alt="Look 6" />
-      <img src="images/produto7.jpg" alt="Look 7" />
-      <img src="images/produto8.jpg" alt="Look 8" />
-      <img src="images/produto9.jpg" alt="Look 9" />
-      <img src="images/produto10.jpg" alt="Look 10" />
-      <img src="images/produto11.jpg" alt="Look 11" />
-      <img src="images/produto12.jpg" alt="Look 12" />
+      <div class="hero-actions">
+        <a href="https://instagram.com/impac.tantes" target="_blank" class="btn btn-primary">
+          <span class="btn-icon">
+            <i class="fa-brands fa-instagram"></i>
+          </span>
+          Falar no Instagram
+        </a>
+        <a href="#catalogo" class="btn btn-outline">
+          Ver catálogo
+        </a>
+      </div>
+
+      <div class="hero-badges">
+        <span class="pill">
+          <span class="pill-icon">
+            <i class="fa-solid fa-location-dot"></i>
+          </span>
+          Brás de Pina • RJ
+        </span>
+        <span class="pill">
+          <span class="pill-icon">
+            <i class="fa-solid fa-star"></i>
+          </span>
+          Looks selecionados
+        </span>
+      </div>
     </div>
   </section>
 
-  <section id="sobre">
-    <h2>Sobre a Loja</h2>
-    <p>
-      Fundada por uma mulher empreendedora e suas filhas no Rio de Janeiro, a
-      <strong>Impactantes</strong> representa força, beleza e autenticidade. Nossa
-      missão é vestir mulheres reais com peças que inspiram confiança, estilo e
-      praticidade no dia a dia. Aqui, cada look é pensado para valorizar quem você é.
-    </p>
-  </section>
+  <!-- Catálogo -->
+  <main>
+    <section id="catalogo" class="section section-catalogo">
+      <div class="section-inner">
+        <h2 class="section-title">Novidades da Coleção</h2>
+        <p class="section-subtitle">
+          Escolha seu look e chame no Instagram para consultar tamanho e valor.
+        </p>
 
-  <section id="contato">
-    <h2>Fale Conosco</h2>
-    <p>
-      📍 Brás de Pina, Rio de Janeiro<br />
-      📸 <a href="https://instagram.com/impac.tantes" target="_blank">Instagram</a>
-    </p>
-  </section>
+        <div class="catalogo-grid">
+          <!-- CARD 1 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto1.jpg"
+                alt="Look 01 - Vestido longo estampado preto e branco"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 01</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
 
-  <footer>
-    <p>&copy; 2025 Impactantes Moda Feminina. Todos os direitos reservados.</p>
+          <!-- CARD 2 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto2.jpg"
+                alt="Look 02 - Conjunto estampado preto e branco"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 02</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto3.jpg"
+                alt="Look 03 - Conjunto azul estampado"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 03</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto4.jpg"
+                alt="Look 04 - Vestido preto recortes"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 04</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD 5 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto5.jpg"
+                alt="Look 05 - Conjunto estampado preto"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 05</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD 6 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto6.jpg"
+                alt="Look 06 - Macacão verde"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 06</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD 7 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto7.jpg"
+                alt="Look 07 - Conjunto rosa"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 07</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD 8 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto8.jpg"
+                alt="Look 08 - Conjunto laranja"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 08</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD 9 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto9.jpg"
+                alt="Look 09 - Vestido midi estampado"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 09</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD 10 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto10.jpg"
+                alt="Look 10 - Conjunto marrom plus size"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 10</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD 11 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto11.jpg"
+                alt="Look 11 - Vestido claro plus size"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 11</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
+
+          <!-- CARD 12 -->
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="images/produto12.jpg"
+                alt="Look 12 - Vestido azul plus size"
+                loading="lazy"
+                data-lightbox="true"
+              >
+            </div>
+            <div class="card-content">
+              <p class="card-look">LOOK • 12</p>
+              <a href="https://instagram.com/impac.tantes" target="_blank" class="card-link">
+                Pedir pelo Instagram →
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre" class="section section-soft">
+      <div class="section-inner">
+        <h2 class="section-title">Sobre a Loja</h2>
+        <p class="section-subtitle">
+          Moda feita para mulheres reais, para mulheres reais.
+        </p>
+
+        <div class="sobre-card">
+          <p>
+            Fundada por uma mulher empreendedora e suas filhas no Rio de Janeiro, a
+            <strong>Impactantes</strong> representa força, beleza e autenticidade.
+            Nossa missão é vestir mulheres reais com peças que inspiram confiança,
+            estilo e praticidade no dia a dia. Aqui, cada look é pensado para
+            valorizar quem você é.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="section section-contact">
+      <div class="section-inner">
+        <h2 class="section-title">Contato Oficial</h2>
+        <p class="section-subtitle">
+          Nosso atendimento é feito exclusivamente pelo Instagram.
+        </p>
+
+        <div class="contato-card">
+          <div class="contato-row">
+            <span class="pill">
+              <span class="pill-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </span>
+              Brás de Pina • Comunidade Quitungo • RJ
+            </span>
+          </div>
+
+          <div class="contato-actions">
+            <a href="https://instagram.com/impac.tantes" target="_blank" class="btn btn-primary">
+              <span class="btn-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </span>
+              Abrir Instagram da Loja
+            </a>
+            <a href="#catalogo" class="btn btn-outline">
+              Voltar ao catálogo
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <p>© 2025 Impactantes Moda Feminina. Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Lightbox para ampliar imagens -->
-  <div id="lightbox-overlay">
-    <img src="" alt="Imagem ampliada" />
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Fechar imagem ampliada">×</button>
+      <img src="" alt="Imagem ampliada" class="lightbox-img" id="lightboxImg">
+    </div>
   </div>
 
+  <!-- Botão flutuante Instagram -->
+  <button class="fab-instagram" id="fabInstagram" aria-label="Abrir Instagram Impactantes">
+    <i class="fa-brands fa-instagram"></i>
+  </button>
+
+  <!-- JS -->
   <script src="js/script.js"></script>
 </body>
 </html>
-
-
