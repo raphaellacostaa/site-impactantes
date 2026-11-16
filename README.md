@@ -15,15 +15,17 @@ Promover a autonomia digital de mulheres empreendedoras por meio da criação de
 ## ✨ Funcionalidades
 
 - Apresentação institucional da loja
-- Galeria com looks e novidades da coleção
-- Informações de contato e redes sociais
-- Layout responsivo e leve
-- Hospedado gratuitamente no GitHub Pages
+- Galeria com looks e novidades da coleção, com filtros (Vestidos, Conjuntos, Plus size)
+- Visualização ampliada das fotos com navegação por setas, teclado e gesto de deslizar
+- Seção "Como comprar" com o passo a passo de atendimento pelo Instagram
+- Menu mobile, animações suaves de entrada e botão flutuante do Instagram
+- Layout responsivo, leve e acessível (navegação por teclado, textos alternativos)
 
 ## 🛠️ Tecnologias Utilizadas
 
 - HTML5
-- CSS3
+- CSS3 (Grid, Flexbox, variáveis CSS)
+- JavaScript (sem bibliotecas)
 - Git e GitHub
 - Vercel (hospedagem)
 
@@ -31,9 +33,13 @@ Promover a autonomia digital de mulheres empreendedoras por meio da criação de
 
 site-impactantes/
 ├── index.html
-├── style.css
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
 └── images/
 ├── logo.png
+├── logo-sm.png
 ├── produto1.jpg
 ├── produto2.jpg
 ├── produto3.jpg
