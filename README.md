@@ -2,7 +2,7 @@
 
 Site institucional desenvolvido para a loja **Impactantes**, um pequeno negócio local de moda feminina localizado no Rio de Janeiro - RJ.
 
-O projeto faz parte das Atividades Extensionistas do curso de Análise e Desenvolvimento de Sistemas da Universidade Candido Mendes.
+O projeto faz parte das Atividades Extensionistas do curso de Análise e Desenvolvimento de Sistemas da Universidade Uninter.
 
 ## 🌐 Acesse o site
 
@@ -56,8 +56,8 @@ site-impactantes/
 
 ## 📝 Autoria
 
-Desenvolvido por **Raphaella Patricia Monteiro Costa**  
-RU: 4577464 – Universidade Candido Mendes  
+Desenvolvido por **Raphaella Costa**  
+RU: 4577464 – Uninter  
 Linkedin: [@raphaellacosta91](https://www.linkedin.com/in/raphaellacosta91/)
 
 ## 📸 Créditos
