@@ -616,6 +616,56 @@ h1, h2, h3, p, figure { margin: 0; }
 .passo h3 { font-family: var(--font-display); font-weight: 400; font-size: 1.4rem; margin-bottom: 8px; }
 .passo p { color: var(--ink-soft); font-size: 0.95rem; }
 
+/* ---------- Instagram ---------- */
+.section-insta { padding-top: 0; }
+.insta-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px;
+}
+.insta-feed { min-height: 120px; }
+.insta-fallback {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+.insta-fallback a {
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  background: var(--blush);
+}
+.insta-fallback img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: transform 0.6s var(--ease);
+}
+.insta-fallback a::after {
+  content: "\f16d";
+  font-family: "Font Awesome 6 Brands";
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 1.6rem;
+  color: var(--white);
+  background: rgba(194, 24, 91, 0.55);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.insta-fallback a:hover img { transform: scale(1.06); }
+.insta-fallback a:hover::after,
+.insta-fallback a:focus-visible::after { opacity: 1; }
+
+@media (max-width: 860px) {
+  .insta-fallback { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
 /* ---------- CTA / Contato ---------- */
 .section-cta { padding-top: 0; }
 .cta {
